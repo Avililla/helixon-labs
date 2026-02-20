@@ -1,30 +1,40 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useSyncExternalStore } from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Cookie } from "lucide-react";
 
-export function CookieBanner() {
-  const [visible, setVisible] = useState(false);
+function getCookieConsentSnapshot() {
+  if (typeof window === "undefined") return true;
+  return localStorage.getItem("helixon-cookie-consent") !== null;
+}
 
-  useEffect(() => {
-    const consent = localStorage.getItem("helixon-cookie-consent");
-    if (!consent) {
-      setVisible(true);
-    }
-  }, []);
+function subscribeToStorage(callback: () => void) {
+  window.addEventListener("storage", callback);
+  return () => window.removeEventListener("storage", callback);
+}
+
+export function CookieBanner() {
+  const t = useTranslations("cookies");
+  const hasConsent = useSyncExternalStore(
+    subscribeToStorage,
+    getCookieConsentSnapshot,
+    () => true
+  );
+  const [dismissed, setDismissed] = useState(false);
 
   const handleAccept = () => {
     localStorage.setItem("helixon-cookie-consent", "accepted");
-    setVisible(false);
+    setDismissed(true);
   };
 
   const handleReject = () => {
     localStorage.setItem("helixon-cookie-consent", "rejected");
-    setVisible(false);
+    setDismissed(true);
   };
 
-  if (!visible) return null;
+  if (hasConsent || dismissed) return null;
 
   return (
     <div
@@ -37,16 +47,15 @@ export function CookieBanner() {
           <Cookie className="h-5 w-5 text-helixon-slate shrink-0 hidden sm:block" />
           <div className="flex-1">
             <p className="text-xs sm:text-sm font-semibold text-helixon-navy mb-0.5 sm:mb-1">
-              Cookie Policy (Art. 22 LSSI-CE)
+              {t("title")}
             </p>
             <p className="text-[11px] sm:text-xs text-helixon-slate leading-relaxed">
-              This website uses strictly necessary cookies for session management.
-              Analytical cookies require your explicit consent.{" "}
+              {t("description")}{" "}
               <a
                 href="#legal"
                 className="text-helixon-blue underline hover:text-helixon-navy"
               >
-                See policy
+                {t("seePolicy")}
               </a>
               .
             </p>
@@ -58,14 +67,14 @@ export function CookieBanner() {
               onClick={handleReject}
               className="flex-1 sm:flex-none border-helixon-slate text-helixon-slate hover:bg-helixon-light h-8 text-xs sm:text-sm"
             >
-              Reject All
+              {t("reject")}
             </Button>
             <Button
               size="sm"
               onClick={handleAccept}
               className="flex-1 sm:flex-none bg-helixon-blue hover:bg-helixon-navy text-white h-8 text-xs sm:text-sm"
             >
-              Accept All
+              {t("accept")}
             </Button>
           </div>
         </div>

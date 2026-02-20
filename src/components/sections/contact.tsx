@@ -1,41 +1,43 @@
-import { Mail, Building2, Clock, AlertTriangle, Globe } from "lucide-react";
+"use client";
+
+import { useTranslations } from "next-intl";
+import { Mail, Building2, Clock, AlertTriangle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
 export function ContactSection() {
+  const t = useTranslations("contact");
+
   return (
     <section id="contact" className="py-20 lg:py-28 bg-helixon-white bg-hex-pattern">
       <div className="container mx-auto px-4 lg:px-8">
-        {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14">
           <p className="text-sm font-semibold uppercase tracking-widest text-helixon-teal mb-3">
-            Contact
+            {t("label")}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-helixon-navy mb-4">
-            Technical Enquiries & Orders
+            {t("title")}
           </h2>
           <p className="text-helixon-slate leading-relaxed">
-            For product enquiries, quotation requests, bulk orders, or technical
-            documentation, contact our team using the information below.
+            {t("subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {/* Contact Cards */}
           <Card className="border-helixon-light">
             <CardContent className="p-6 text-center">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-helixon-blue/10 mx-auto mb-4">
                 <Mail className="h-5 w-5 text-helixon-blue" />
               </div>
               <h3 className="font-semibold text-helixon-navy mb-2">
-                Technical Department
+                {t("cards.technical.title")}
               </h3>
               <p className="text-sm text-helixon-slate mb-3">
-                Product specifications, COA requests, custom synthesis enquiries
+                {t("cards.technical.description")}
               </p>
               <p className="text-sm font-medium text-helixon-blue">
-                info@helixonlabs.com
+                {t("cards.technical.email")}
               </p>
             </CardContent>
           </Card>
@@ -46,17 +48,17 @@ export function ContactSection() {
                 <Building2 className="h-5 w-5 text-helixon-blue" />
               </div>
               <h3 className="font-semibold text-helixon-navy mb-2">
-                Registered Office
+                {t("cards.office.title")}
               </h3>
               <p className="text-sm text-helixon-slate mb-3">
-                Helixon Labs, S.L.
+                {t("cards.office.address1")}
                 <br />
-                [Registered Address]
+                {t("cards.office.address2")}
                 <br />
-                Spain
+                {t("cards.office.address3")}
               </p>
               <p className="text-sm font-medium text-helixon-blue">
-                CIF: B-XXXXXXXX
+                {t("cards.office.cif")}
               </p>
             </CardContent>
           </Card>
@@ -67,14 +69,13 @@ export function ContactSection() {
                 <Clock className="h-5 w-5 text-helixon-blue" />
               </div>
               <h3 className="font-semibold text-helixon-navy mb-2">
-                Response Times
+                {t("cards.response.title")}
               </h3>
               <p className="text-sm text-helixon-slate mb-3">
-                Technical enquiries are processed during business hours (CET).
-                We aim to respond within 48 hours.
+                {t("cards.response.description")}
               </p>
               <p className="text-sm font-medium text-helixon-blue">
-                Mon–Fri, 09:00–17:00 CET
+                {t("cards.response.hours")}
               </p>
             </CardContent>
           </Card>
@@ -82,17 +83,14 @@ export function ContactSection() {
 
         <Separator className="my-12 bg-helixon-light max-w-5xl mx-auto" />
 
-        {/* Contact Form Area */}
         <div className="max-w-2xl mx-auto">
           <Card className="border-helixon-light">
             <CardContent className="p-8">
               <h3 className="text-lg font-semibold text-helixon-navy mb-2">
-                Request a Quotation
+                {t("form.title")}
               </h3>
               <p className="text-sm text-helixon-slate mb-6">
-                Complete the form below for product quotations, bulk pricing, or
-                custom synthesis requests. All enquiries are subject to buyer
-                qualification verification.
+                {t("form.subtitle")}
               </p>
 
               <form className="space-y-5">
@@ -102,14 +100,14 @@ export function ContactSection() {
                       htmlFor="name"
                       className="block text-sm font-medium text-helixon-navy mb-1.5"
                     >
-                      Full Name *
+                      {t("form.fullName")}
                     </label>
                     <input
                       id="name"
                       type="text"
                       required
                       className="w-full rounded-md border border-helixon-light bg-white px-3.5 py-2.5 text-sm text-helixon-navy placeholder:text-helixon-gray focus:border-helixon-blue focus:ring-1 focus:ring-helixon-blue outline-none transition-colors"
-                      placeholder="Dr. / Prof. Name"
+                      placeholder={t("form.fullNamePlaceholder")}
                     />
                   </div>
                   <div>
@@ -117,14 +115,14 @@ export function ContactSection() {
                       htmlFor="email"
                       className="block text-sm font-medium text-helixon-navy mb-1.5"
                     >
-                      Institutional Email *
+                      {t("form.email")}
                     </label>
                     <input
                       id="email"
                       type="email"
                       required
                       className="w-full rounded-md border border-helixon-light bg-white px-3.5 py-2.5 text-sm text-helixon-navy placeholder:text-helixon-gray focus:border-helixon-blue focus:ring-1 focus:ring-helixon-blue outline-none transition-colors"
-                      placeholder="name@institution.edu"
+                      placeholder={t("form.emailPlaceholder")}
                     />
                   </div>
                 </div>
@@ -134,14 +132,14 @@ export function ContactSection() {
                     htmlFor="institution"
                     className="block text-sm font-medium text-helixon-navy mb-1.5"
                   >
-                    Institution / Company *
+                    {t("form.institution")}
                   </label>
                   <input
                     id="institution"
                     type="text"
                     required
                     className="w-full rounded-md border border-helixon-light bg-white px-3.5 py-2.5 text-sm text-helixon-navy placeholder:text-helixon-gray focus:border-helixon-blue focus:ring-1 focus:ring-helixon-blue outline-none transition-colors"
-                    placeholder="University / Laboratory / Company"
+                    placeholder={t("form.institutionPlaceholder")}
                   />
                 </div>
 
@@ -150,22 +148,20 @@ export function ContactSection() {
                     htmlFor="subject"
                     className="block text-sm font-medium text-helixon-navy mb-1.5"
                   >
-                    Enquiry Subject *
+                    {t("form.subject")}
                   </label>
                   <select
                     id="subject"
                     required
                     className="w-full rounded-md border border-helixon-light bg-white px-3.5 py-2.5 text-sm text-helixon-navy focus:border-helixon-blue focus:ring-1 focus:ring-helixon-blue outline-none transition-colors"
                   >
-                    <option value="">Select type of enquiry</option>
-                    <option value="quotation">Product Quotation</option>
-                    <option value="bulk">Bulk Order Enquiry</option>
-                    <option value="custom">Custom Synthesis Request</option>
-                    <option value="coa">COA / SDS Documentation Request</option>
-                    <option value="technical">
-                      Technical Specification Query
-                    </option>
-                    <option value="account">Account / Registration</option>
+                    <option value="">{t("form.subjectPlaceholder")}</option>
+                    <option value="quotation">{t("form.subjects.quotation")}</option>
+                    <option value="bulk">{t("form.subjects.bulk")}</option>
+                    <option value="custom">{t("form.subjects.custom")}</option>
+                    <option value="coa">{t("form.subjects.coa")}</option>
+                    <option value="technical">{t("form.subjects.technical")}</option>
+                    <option value="account">{t("form.subjects.account")}</option>
                   </select>
                 </div>
 
@@ -174,18 +170,17 @@ export function ContactSection() {
                     htmlFor="message"
                     className="block text-sm font-medium text-helixon-navy mb-1.5"
                   >
-                    Message *
+                    {t("form.message")}
                   </label>
                   <textarea
                     id="message"
                     rows={4}
                     required
                     className="w-full rounded-md border border-helixon-light bg-white px-3.5 py-2.5 text-sm text-helixon-navy placeholder:text-helixon-gray focus:border-helixon-blue focus:ring-1 focus:ring-helixon-blue outline-none transition-colors resize-none"
-                    placeholder="Please include product names, CAS numbers, quantities required, and any relevant specifications."
+                    placeholder={t("form.messagePlaceholder")}
                   />
                 </div>
 
-                {/* Mandatory Checkbox */}
                 <div className="rounded-lg border border-helixon-amber/20 bg-helixon-amber/5 p-4">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input
@@ -194,27 +189,23 @@ export function ContactSection() {
                       className="mt-1 h-4 w-4 rounded border-helixon-light text-helixon-blue focus:ring-helixon-blue"
                     />
                     <span className="text-xs text-helixon-slate leading-relaxed">
-                      I certify that I represent a legitimate research
-                      institution, laboratory, or biotechnology company, and
-                      that any products requested will be used{" "}
+                      {t("form.checkbox")}{" "}
                       <strong className="text-helixon-navy">
-                        exclusively for laboratory research purposes.
+                        {t("form.checkboxHighlight")}
                       </strong>{" "}
-                      I confirm that products will not be used for human
-                      consumption, veterinary use, or any therapeutic,
-                      diagnostic, or clinical application. I accept the{" "}
+                      {t("form.checkboxEnd")}{" "}
                       <a
                         href="#legal"
                         className="text-helixon-blue underline hover:text-helixon-navy"
                       >
-                        Terms & Conditions
+                        {t("form.termsAndConditions")}
                       </a>{" "}
-                      and{" "}
+                      {t("form.and")}{" "}
                       <a
                         href="#legal"
                         className="text-helixon-blue underline hover:text-helixon-navy"
                       >
-                        Privacy Policy
+                        {t("form.privacyPolicy")}
                       </a>
                       .
                     </span>
@@ -226,28 +217,20 @@ export function ContactSection() {
                   className="w-full bg-helixon-blue hover:bg-helixon-navy text-white font-semibold"
                   size="lg"
                 >
-                  Submit Enquiry
+                  {t("form.submit")}
                 </Button>
               </form>
             </CardContent>
           </Card>
         </div>
 
-        {/* Communication Notice */}
         <div className="mt-8 flex items-start gap-3 max-w-2xl mx-auto rounded-lg border border-helixon-amber/20 bg-helixon-amber/5 p-4">
           <AlertTriangle className="h-4 w-4 text-helixon-amber shrink-0 mt-0.5" />
           <div className="text-xs text-helixon-slate leading-relaxed">
             <p className="font-semibold text-helixon-amber mb-1">
-              Communication Policy
+              {t("communicationPolicy.title")}
             </p>
-            <p>
-              Helixon Labs provides technical support limited to product
-              specifications, analytical documentation, and order processing. We
-              do not provide guidance, recommendations, or information regarding
-              biological activity, therapeutic applications, or clinical use of
-              any product. Enquiries regarding human or veterinary applications
-              will not receive a response.
-            </p>
+            <p>{t("communicationPolicy.text")}</p>
           </div>
         </div>
       </div>

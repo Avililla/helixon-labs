@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { DisclaimerBanner } from "@/components/layout/disclaimer-banner";
@@ -48,21 +50,26 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
-        <DisclaimerBanner />
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-        <CookieBanner />
+        <NextIntlClientProvider messages={messages}>
+          <DisclaimerBanner />
+          <Header />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+          <CookieBanner />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

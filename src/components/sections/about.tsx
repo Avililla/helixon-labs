@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import {
   ShieldCheck,
   FlaskConical,
@@ -10,80 +11,59 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-const capabilities = [
-  {
-    icon: FlaskConical,
-    title: "High-Purity Compounds",
-    description:
-      "Synthetic peptides and chemical reagents manufactured to strict quality specifications with documented purity levels.",
-  },
-  {
-    icon: FileSearch,
-    title: "Full Traceability",
-    description:
-      "Every product is supplied with a Certificate of Analysis (COA) and Safety Data Sheet (SDS), ensuring complete batch traceability.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Regulatory Compliance",
-    description:
-      "Operations aligned with REACH (EC 1907/2006), CLP (EC 1272/2008), and GHS requirements for chemical handling and classification.",
-  },
-  {
-    icon: PackageCheck,
-    title: "Controlled Supply Chain",
-    description:
-      "Rigorous supplier qualification processes, incoming quality control, and proper storage conditions throughout the distribution chain.",
-  },
-];
-
-const audiences = [
-  { icon: Building2, label: "Laboratories" },
-  { icon: GraduationCap, label: "Universities" },
-  { icon: Microscope, label: "R&D Centres" },
-  { icon: Landmark, label: "Biotech Companies" },
-];
-
 export function AboutSection() {
+  const t = useTranslations("about");
+
+  const capabilities = [
+    {
+      icon: FlaskConical,
+      title: t("capabilities.purity.title"),
+      description: t("capabilities.purity.description"),
+    },
+    {
+      icon: FileSearch,
+      title: t("capabilities.traceability.title"),
+      description: t("capabilities.traceability.description"),
+    },
+    {
+      icon: ShieldCheck,
+      title: t("capabilities.compliance.title"),
+      description: t("capabilities.compliance.description"),
+    },
+    {
+      icon: PackageCheck,
+      title: t("capabilities.supply.title"),
+      description: t("capabilities.supply.description"),
+    },
+  ];
+
+  const audiences = [
+    { icon: Building2, label: t("audiences.laboratories") },
+    { icon: GraduationCap, label: t("audiences.universities") },
+    { icon: Microscope, label: t("audiences.rdCentres") },
+    { icon: Landmark, label: t("audiences.biotech") },
+  ];
+
   return (
     <section id="about" className="py-20 lg:py-28 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Left: Text Content */}
           <div>
             <p className="text-sm font-semibold uppercase tracking-widest text-helixon-teal mb-3">
-              About Helixon Labs
+              {t("label")}
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-helixon-navy mb-6">
-              Technical Supplier of Research Reagents
+              {t("title")}
             </h2>
             <div className="space-y-4 text-helixon-slate leading-relaxed">
-              <p>
-                Helixon Labs is a Spain-based supplier specialising in the
-                provision of synthetic peptides and chemical reagents for
-                scientific research and experimental purposes. Our operations are
-                focused exclusively on the B2B supply of laboratory-grade
-                compounds to qualified research institutions.
-              </p>
-              <p>
-                We operate with a commitment to quality assurance, batch
-                traceability, and full regulatory compliance. Each product in our
-                catalogue is accompanied by comprehensive analytical
-                documentation, including Certificates of Analysis (COA) and
-                Safety Data Sheets (SDS/MSDS).
-              </p>
-              <p>
-                Our role is strictly limited to the supply of chemical compounds
-                for research. We do not provide medical advice, therapeutic
-                recommendations, or guidance on clinical applications of any
-                kind.
-              </p>
+              <p>{t("paragraph1")}</p>
+              <p>{t("paragraph2")}</p>
+              <p>{t("paragraph3")}</p>
             </div>
 
-            {/* Audience Tags */}
             <div className="mt-8">
               <p className="text-xs font-semibold uppercase tracking-wider text-helixon-slate mb-3">
-                We supply to
+                {t("supplyTo")}
               </p>
               <div className="flex flex-wrap gap-3">
                 {audiences.map((item) => (
@@ -101,7 +81,6 @@ export function AboutSection() {
             </div>
           </div>
 
-          {/* Right: Capability Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {capabilities.map((cap) => (
               <Card

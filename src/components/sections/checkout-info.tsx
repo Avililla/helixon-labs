@@ -1,57 +1,52 @@
+import { useTranslations } from "next-intl";
 import { ShieldCheck, UserCheck, ClipboardCheck, Lock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-const steps = [
-  {
-    icon: UserCheck,
-    step: "01",
-    title: "Account Registration",
-    description:
-      "Purchase is restricted to registered users. During registration, buyers must provide institutional affiliation, research purpose, and professional credentials. Individual consumer accounts are not permitted.",
-  },
-  {
-    icon: ClipboardCheck,
-    step: "02",
-    title: "Mandatory Research Certification",
-    description:
-      'Before completing any purchase, buyers must confirm via mandatory checkbox: "I certify that the products purchased will be used exclusively for laboratory research purposes." Acceptance of Terms & Conditions is required.',
-  },
-  {
-    icon: ShieldCheck,
-    step: "03",
-    title: "Declared Use Registration",
-    description:
-      "Each order records the declared use of the products purchased. This information is retained as part of our due diligence and regulatory compliance programme, and may be disclosed to regulatory authorities upon request.",
-  },
-  {
-    icon: Lock,
-    step: "04",
-    title: "Secure Processing",
-    description:
-      "Order processing includes verification of buyer credentials. Helixon Labs reserves the right to request additional documentation and to refuse or cancel any order where the intended use cannot be verified as legitimate research.",
-  },
-];
-
 export function CheckoutInfoSection() {
+  const t = useTranslations("checkout");
+
+  const steps = [
+    {
+      icon: UserCheck,
+      step: t("steps.registration.step"),
+      title: t("steps.registration.title"),
+      description: t("steps.registration.description"),
+    },
+    {
+      icon: ClipboardCheck,
+      step: t("steps.certification.step"),
+      title: t("steps.certification.title"),
+      description: t("steps.certification.description"),
+    },
+    {
+      icon: ShieldCheck,
+      step: t("steps.declaration.step"),
+      title: t("steps.declaration.title"),
+      description: t("steps.declaration.description"),
+    },
+    {
+      icon: Lock,
+      step: t("steps.processing.step"),
+      title: t("steps.processing.title"),
+      description: t("steps.processing.description"),
+    },
+  ];
+
   return (
     <section id="account" className="py-20 lg:py-28 bg-gradient-to-b from-helixon-navy to-helixon-blue">
       <div className="container mx-auto px-4 lg:px-8">
-        {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14">
           <p className="text-sm font-semibold uppercase tracking-widest text-helixon-teal-light mb-3">
-            Account & Purchase Process
+            {t("label")}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Verified Buyers Only
+            {t("title")}
           </h2>
           <p className="text-helixon-gray leading-relaxed">
-            Access to purchase products requires a verified account. Our
-            registration and checkout process is designed to ensure that all
-            products reach qualified research professionals and institutions.
+            {t("subtitle")}
           </p>
         </div>
 
-        {/* Steps Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {steps.map((item) => (
             <Card
@@ -78,15 +73,12 @@ export function CheckoutInfoSection() {
           ))}
         </div>
 
-        {/* Checkout Disclaimer */}
         <div className="mt-10 max-w-3xl mx-auto rounded-lg border border-white/10 bg-white/5 p-5 text-center">
           <p className="text-sm text-helixon-gray">
-            Mandatory pre-purchase certification required:
+            {t("disclaimerLabel")}
           </p>
           <p className="text-white font-medium mt-2 italic">
-            &ldquo;I certify that the products purchased will be used
-            exclusively for laboratory research purposes. Not for human or
-            veterinary use.&rdquo;
+            &ldquo;{t("disclaimerQuote")}&rdquo;
           </p>
         </div>
       </div>

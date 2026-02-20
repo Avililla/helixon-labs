@@ -1,0 +1,510 @@
+{
+  "metadata": {
+    "title": "Helixon Labs | Research Peptides & Chemical Reagents",
+    "titleTemplate": "%s | Helixon Labs",
+    "description": "Helixon Labs supplies synthetic peptides and chemical reagents exclusively for laboratory research purposes. Not for human or veterinary use."
+  },
+  "header": {
+    "brandName": "Helixon Labs",
+    "brandTagline": "Research Reagents",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "products": "Products",
+      "quality": "Quality",
+      "legal": "Legal",
+      "contact": "Contact"
+    },
+    "requestQuote": "Request Quote",
+    "openMenu": "Open menu",
+    "disclaimer": "For research use only. Not for human or veterinary use."
+  },
+  "disclaimer": {
+    "message": "Products for laboratory research only. Not for human or veterinary use.",
+    "dismiss": "Dismiss disclaimer"
+  },
+  "hero": {
+    "badge": "EU Regulatory Compliant",
+    "title": "Synthetic Peptides &",
+    "titleLine2": "Chemical Reagents",
+    "titleHighlight": "for Laboratory Research",
+    "subtitle": "Helixon Labs provides high-purity synthetic peptides and chemical reagents to laboratories, universities, and research institutions across Europe.",
+    "disclaimer": "Products supplied strictly for laboratory research purposes. Not for human or veterinary use.",
+    "cta": {
+      "catalogue": "View Product Catalogue",
+      "quality": "Quality & Documentation"
+    },
+    "stats": {
+      "purity": {
+        "value": ">98%",
+        "label": "Min. Purity (HPLC)"
+      },
+      "coa": {
+        "value": "COA",
+        "label": "Certificate per Batch"
+      },
+      "ghs": {
+        "value": "GHS",
+        "label": "Compliant Labelling"
+      },
+      "reach": {
+        "value": "REACH",
+        "label": "EU Reg. (EC) 1907/2006"
+      }
+    }
+  },
+  "about": {
+    "label": "About Helixon Labs",
+    "title": "Technical Supplier of Research Reagents",
+    "paragraph1": "Helixon Labs is a Spain-based supplier specialising in the provision of synthetic peptides and chemical reagents for scientific research and experimental purposes. Our operations are focused exclusively on the B2B supply of laboratory-grade compounds to qualified research institutions.",
+    "paragraph2": "We operate with a commitment to quality assurance, batch traceability, and full regulatory compliance. Each product in our catalogue is accompanied by comprehensive analytical documentation, including Certificates of Analysis (COA) and Safety Data Sheets (SDS/MSDS).",
+    "paragraph3": "Our role is strictly limited to the supply of chemical compounds for research. We do not provide medical advice, therapeutic recommendations, or guidance on clinical applications of any kind.",
+    "supplyTo": "We supply to",
+    "audiences": {
+      "laboratories": "Laboratories",
+      "universities": "Universities",
+      "rdCentres": "R&D Centres",
+      "biotech": "Biotech Companies"
+    },
+    "capabilities": {
+      "purity": {
+        "title": "High-Purity Compounds",
+        "description": "Synthetic peptides and chemical reagents manufactured to strict quality specifications with documented purity levels."
+      },
+      "traceability": {
+        "title": "Full Traceability",
+        "description": "Every product is supplied with a Certificate of Analysis (COA) and Safety Data Sheet (SDS), ensuring complete batch traceability."
+      },
+      "compliance": {
+        "title": "Regulatory Compliance",
+        "description": "Operations aligned with REACH (EC 1907/2006), CLP (EC 1272/2008), and GHS requirements for chemical handling and classification."
+      },
+      "supply": {
+        "title": "Controlled Supply Chain",
+        "description": "Rigorous supplier qualification processes, incoming quality control, and proper storage conditions throughout the distribution chain."
+      }
+    }
+  },
+  "products": {
+    "label": "Product Catalogue",
+    "title": "Research Peptides & Chemical Reagents",
+    "subtitle": "All compounds are supplied as lyophilized powders with documented purity specifications. Each product includes a batch-specific Certificate of Analysis (COA) and Safety Data Sheet (SDS).",
+    "disclaimer": "For research use only. Not approved for human or veterinary consumption.",
+    "bottomNotice": "This catalogue presents a selection of research reagents. All products are characterised by chemical identity and analytical data only. No information regarding biological activity, efficacy, or therapeutic application is provided. For bulk enquiries or custom synthesis, please contact our technical department.",
+    "cardDisclaimer": "For research use only. Not approved for human or veterinary consumption. The buyer assumes full responsibility for compliance with applicable regulations.",
+    "ref": "Ref:",
+    "pubchem": "PubChem CID",
+    "labels": {
+      "cas": "CAS Number",
+      "formula": "Molecular Formula",
+      "weight": "Molecular Weight",
+      "purity": "Purity",
+      "analysis": "Analysis",
+      "appearance": "Appearance",
+      "storage": "Storage"
+    },
+    "items": {
+      "semaglutide": {
+        "name": "Semaglutide",
+        "category": "GLP-1 Receptor Agonist Peptide",
+        "chemicalName": "N-(26-{2-[2-(2-{2-[2-(2-{(S)-2-[(S)-2-((S)-2-{(S)-2-[(S)-2-((S)-2-Amino-3-(1H-imidazol-4-yl)propanamido)-4-methylpentanamido]-4-carboxybutanamido}-3-(1H-indol-3-yl)propanamido)propanamido]-3-methylbutanamido}ethylamino)-2-oxoethyl]amino}-2-oxoethylamino)-2-oxoethyl]amino}-2-oxoethylamino)-2-oxoethyl]amino}-2,6,20,26-tetraoxo-...) Acetate Salt",
+        "cas": "910463-68-2",
+        "formula": "C187H291N45O59",
+        "weight": "4113.58 g/mol",
+        "purity": "≥98% (HPLC)",
+        "analysisMethod": "HPLC, LC-MS, Amino Acid Analysis",
+        "appearance": "White to off-white lyophilized powder",
+        "storage": "-20°C, desiccated, protected from light",
+        "pubchemCid": "56843331"
+      },
+      "tirzepatide": {
+        "name": "Tirzepatide",
+        "category": "GIP/GLP-1 Receptor Agonist Peptide",
+        "chemicalName": "Tirzepatide (C225H348N48O68) Acetate Salt — Dual GIP/GLP-1 Receptor Agonist Peptide",
+        "cas": "2023788-19-2",
+        "formula": "C225H348N48O68",
+        "weight": "4813.45 g/mol",
+        "purity": "≥98% (HPLC)",
+        "analysisMethod": "HPLC, LC-MS, Amino Acid Analysis",
+        "appearance": "White to off-white lyophilized powder",
+        "storage": "-20°C, desiccated, protected from light",
+        "pubchemCid": "156588324"
+      },
+      "bpc157": {
+        "name": "BPC-157",
+        "category": "Pentadecapeptide Fragment",
+        "chemicalName": "L-Valine, glycyl-L-alpha-glutamyl-L-prolyl-L-prolyl-L-prolylglycyl-L-lysyl-L-prolyl-L-alanyl-L-aspartyl-L-aspartyl-L-alanylglycyl-L-leucyl- Acetate Salt",
+        "cas": "137525-51-0",
+        "formula": "C62H98N16O22",
+        "weight": "1419.53 g/mol",
+        "purity": "≥98% (HPLC)",
+        "analysisMethod": "HPLC, ESI-MS",
+        "appearance": "White lyophilized powder",
+        "storage": "-20°C, desiccated",
+        "pubchemCid": "108101"
+      },
+      "cjc1295": {
+        "name": "CJC-1295 (without DAC)",
+        "category": "Growth Hormone Releasing Hormone Analogue",
+        "chemicalName": "L-Tyrosyl-D-alanyl-L-aspartyl-L-alanyl-L-isoleucyl-L-phenylalanyl-L-threonyl-L-glutaminyl-L-seryl-L-tyrosyl-L-arginyl-L-lysyl-L-valyl-L-leucyl-L-alanyl-L-glutaminyl-L-leucyl-L-seryl-L-alanyl-L-arginyl-L-lysyl-L-leucyl-L-leucyl-L-glutaminyl-L-aspartyl-L-isoleucyl-L-leucyl-L-seryl-L-arginyl Acetate Salt",
+        "cas": "863288-34-0",
+        "formula": "C152H252N44O42",
+        "weight": "3367.97 g/mol",
+        "purity": "≥98% (HPLC)",
+        "analysisMethod": "HPLC, MALDI-TOF MS",
+        "appearance": "White to off-white lyophilized powder",
+        "storage": "-20°C, desiccated, protected from light",
+        "pubchemCid": "91976842"
+      },
+      "tb500": {
+        "name": "TB-500 (Thymosin Beta-4 Fragment)",
+        "category": "Thymosin Beta-4 Peptide Fragment",
+        "chemicalName": "Thymosin Beta-4 Acetyl Fragment 17-23, Ac-LKKTETQ — Acetate Salt",
+        "cas": "77591-33-4",
+        "formula": "C38H68N10O15",
+        "weight": "904.99 g/mol",
+        "purity": "≥98% (HPLC)",
+        "analysisMethod": "HPLC, LC-MS",
+        "appearance": "White lyophilized powder",
+        "storage": "-20°C, desiccated",
+        "pubchemCid": "16134148"
+      },
+      "melanotan2": {
+        "name": "Melanotan II",
+        "category": "Melanocortin Receptor Agonist Peptide",
+        "chemicalName": "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH2 Acetate Salt",
+        "cas": "121062-08-6",
+        "formula": "C50H69N15O9",
+        "weight": "1024.18 g/mol",
+        "purity": "≥98% (HPLC)",
+        "analysisMethod": "HPLC, ESI-MS",
+        "appearance": "White lyophilized powder",
+        "storage": "-20°C, desiccated, protected from light",
+        "pubchemCid": "92432"
+      }
+    }
+  },
+  "quality": {
+    "label": "Quality & Traceability",
+    "title": "Documentation & Analytical Standards",
+    "subtitle": "Helixon Labs maintains comprehensive quality documentation for every product. Our commitment to traceability ensures that each compound can be tracked from its origin through to delivery, with complete analytical characterisation available for every batch.",
+    "pillars": {
+      "coa": {
+        "title": "Certificate of Analysis (COA)",
+        "description": "Every batch is accompanied by a COA detailing purity (HPLC), identity confirmation (MS), molecular weight verification, and residual solvent analysis. COAs are generated per lot number and available upon request."
+      },
+      "sds": {
+        "title": "Safety Data Sheets (SDS/MSDS)",
+        "description": "All products include SDS documentation in accordance with Regulation (EC) No 1272/2008 (CLP) and the Globally Harmonized System (GHS). Sheets detail hazard classification, handling precautions, and emergency measures."
+      },
+      "supplier": {
+        "title": "Supplier Qualification",
+        "description": "Raw materials and finished compounds are sourced exclusively from qualified manufacturers with documented quality management systems. Supplier audits and qualification reviews are conducted periodically."
+      },
+      "batch": {
+        "title": "Batch Management",
+        "description": "Each product lot is assigned a unique batch number enabling full traceability from origin to delivery. Batch records include manufacturing date, analytical results, and release approval status."
+      },
+      "storage": {
+        "title": "Storage & Handling",
+        "description": "Products are stored under controlled conditions (-20°C for peptides) with temperature monitoring. Shipping is performed with appropriate cold-chain logistics to maintain compound integrity."
+      },
+      "analytical": {
+        "title": "Analytical Methods",
+        "description": "Purity is determined by reversed-phase HPLC. Identity is confirmed by LC-MS or MALDI-TOF mass spectrometry. Amino acid composition analysis is performed where applicable."
+      }
+    },
+    "regulatory": {
+      "title": "Regulatory Framework Alignment",
+      "description": "Our operations are aligned with the principal European regulatory frameworks governing the supply and handling of chemical substances for research purposes.",
+      "items": {
+        "reach": {
+          "code": "REACH",
+          "name": "Regulation (EC) 1907/2006",
+          "desc": "Registration, Evaluation, Authorisation and Restriction of Chemicals"
+        },
+        "clp": {
+          "code": "CLP",
+          "name": "Regulation (EC) 1272/2008",
+          "desc": "Classification, Labelling and Packaging of Substances and Mixtures"
+        },
+        "ghs": {
+          "code": "GHS",
+          "name": "UN GHS Rev. 10",
+          "desc": "Globally Harmonized System of Classification and Labelling"
+        },
+        "gdp": {
+          "code": "GDP",
+          "name": "Good Distribution Practice",
+          "desc": "Guidelines for proper storage, transport and traceability"
+        }
+      }
+    },
+    "notice": "Helixon Labs provides products for research use only. The quality documentation referenced above pertains to chemical characterisation and does not constitute evidence of suitability for any therapeutic, diagnostic, or clinical application."
+  },
+  "checkout": {
+    "label": "Account & Purchase Process",
+    "title": "Verified Buyers Only",
+    "subtitle": "Access to purchase products requires a verified account. Our registration and checkout process is designed to ensure that all products reach qualified research professionals and institutions.",
+    "steps": {
+      "registration": {
+        "step": "01",
+        "title": "Account Registration",
+        "description": "Purchase is restricted to registered users. During registration, buyers must provide institutional affiliation, research purpose, and professional credentials. Individual consumer accounts are not permitted."
+      },
+      "certification": {
+        "step": "02",
+        "title": "Mandatory Research Certification",
+        "description": "Before completing any purchase, buyers must confirm via mandatory checkbox: \"I certify that the products purchased will be used exclusively for laboratory research purposes.\" Acceptance of Terms & Conditions is required."
+      },
+      "declaration": {
+        "step": "03",
+        "title": "Declared Use Registration",
+        "description": "Each order records the declared use of the products purchased. This information is retained as part of our due diligence and regulatory compliance programme, and may be disclosed to regulatory authorities upon request."
+      },
+      "processing": {
+        "step": "04",
+        "title": "Secure Processing",
+        "description": "Order processing includes verification of buyer credentials. Helixon Labs reserves the right to request additional documentation and to refuse or cancel any order where the intended use cannot be verified as legitimate research."
+      }
+    },
+    "disclaimerLabel": "Mandatory pre-purchase certification required:",
+    "disclaimerQuote": "I certify that the products purchased will be used exclusively for laboratory research purposes. Not for human or veterinary use."
+  },
+  "legal": {
+    "label": "Legal & Compliance",
+    "title": "Regulatory Framework & Terms of Supply",
+    "subtitle": "Helixon Labs operates in strict compliance with Spanish and European Union regulations. The following legal provisions govern the sale and supply of all products through this platform.",
+    "intendedUse": {
+      "title": "Intended Use Declaration",
+      "p1": "All products offered by Helixon Labs are intended",
+      "p1Highlight": "exclusively for in-vitro laboratory research and experimental purposes.",
+      "p2": "These products are chemical reagents supplied for use by qualified researchers in controlled laboratory environments. They are not pharmaceutical products, medicinal products, foodstuffs, cosmetics, dietary supplements, medical devices, or veterinary products.",
+      "p3": "These products have",
+      "p3Highlight": "not been evaluated or authorised by the AEMPS (Agencia Espanola de Medicamentos y Productos Sanitarios), the EMA (European Medicines Agency), or any other health authority",
+      "p3End": "for use in humans or animals. No claims regarding therapeutic, diagnostic, preventive, or curative properties are made or implied.",
+      "p4": "This website does not sell medicinal products, medical devices, food products, cosmetics, dietary supplements, or products for personal use. It is not a pharmacy, parapharmacy, or health commerce platform."
+    },
+    "prohibitions": {
+      "title": "Express Prohibitions",
+      "intro": "The following uses are",
+      "introHighlight": "strictly prohibited:",
+      "items": [
+        "Human consumption or self-administration",
+        "Veterinary use or animal administration outside approved research protocols",
+        "Use as a pharmaceutical ingredient without regulatory authorisation",
+        "Resale as a health supplement, food product, or cosmetic ingredient",
+        "Clinical, therapeutic, or diagnostic application of any kind",
+        "Any use not consistent with legitimate scientific research"
+      ]
+    },
+    "buyerResponsibility": {
+      "title": "Buyer Responsibility",
+      "intro": "By purchasing products from Helixon Labs, the buyer represents and warrants that:",
+      "items": [
+        "They are a qualified researcher or represent a legitimate research institution, laboratory, or biotechnology company",
+        "Products will be used exclusively for lawful research purposes in a controlled laboratory environment",
+        "They have the necessary permits, licences, and authorisations required by applicable local, national, and international law",
+        "They assume full responsibility for the safe handling, storage, use, and disposal of all products purchased",
+        "They will comply with all applicable regulations including REACH, CLP, and local chemical safety requirements"
+      ]
+    },
+    "rightToRefuse": {
+      "title": "Right to Refuse & Cancel Orders",
+      "intro": "Helixon Labs reserves the right, at its sole discretion, to:",
+      "items": [
+        "Refuse to process any order where the intended use is suspected to be inconsistent with legitimate research purposes",
+        "Cancel any order and refund payment where there is reasonable suspicion of misuse or diversion",
+        "Request additional documentation or verification regarding the identity and qualifications of the buyer",
+        "Report any suspected illegal activity to the relevant authorities, including AEMPS and law enforcement agencies",
+        "Terminate the account of any buyer in violation of these terms"
+      ]
+    },
+    "avisoLegal": {
+      "title": "Aviso Legal — Legal Notice (LSSI-CE)",
+      "intro": "In compliance with Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), the following information is provided:",
+      "companyName": "Company Name",
+      "cif": "CIF",
+      "registeredAddress": "Registered Address",
+      "tradeRegister": "Trade Register",
+      "contactEmail": "Contact Email",
+      "vatNumber": "VAT Number (NIF-IVA)",
+      "activity": "Activity",
+      "activityValue": "Supply of chemical reagents for research",
+      "gdpr": {
+        "title": "Data Protection (GDPR / LOPD-GDD)",
+        "p1": "In compliance with Regulation (EU) 2016/679 (GDPR) and Organic Law 3/2018 on Personal Data Protection and Digital Rights Guarantee (LOPD-GDD), Helixon Labs processes personal data solely for order management, customer account administration, and regulatory compliance purposes. Data subjects may exercise their rights of access, rectification, erasure, restriction, portability, and objection by writing to",
+        "p2": "Data subjects also have the right to lodge a complaint with the",
+        "p3": "at"
+      },
+      "cookies": {
+        "title": "Cookie Policy",
+        "text": "This website uses strictly necessary cookies for session management and site functionality. Analytical cookies are used only with explicit user consent, in accordance with Article 22 of the LSSI-CE. Users may configure cookie preferences at any time through browser settings or the cookie consent manager."
+      },
+      "jurisdiction": {
+        "title": "Applicable Law & Jurisdiction",
+        "text": "These terms are governed by Spanish law. Any dispute arising from the use of this website or the purchase of products shall be subject to the exclusive jurisdiction of the courts of [City], Spain, except where mandatory consumer protection rules dictate otherwise."
+      }
+    }
+  },
+  "faq": {
+    "label": "Frequently Asked Questions",
+    "title": "Technical & Regulatory Information",
+    "subtitle": "The following questions address common enquiries regarding our products, documentation, regulatory compliance, and terms of supply.",
+    "notice": "This FAQ section provides general information about Helixon Labs products and operations. It does not constitute legal, medical, pharmaceutical, or scientific advice. For specific regulatory enquiries, please consult a qualified professional. Helixon Labs does not respond to enquiries regarding human or veterinary applications of any product.",
+    "items": {
+      "q1": {
+        "question": "What type of products does Helixon Labs supply?",
+        "answer": "Helixon Labs supplies synthetic peptides and chemical reagents intended exclusively for laboratory research and experimental purposes. All products are classified as research-grade chemical compounds and are not pharmaceutical products, medicinal products, dietary supplements, or food products."
+      },
+      "q2": {
+        "question": "Who can purchase products from Helixon Labs?",
+        "answer": "Our products are available only to qualified purchasers, including accredited research laboratories, universities, R&D centres, and biotechnology companies. All buyers must register an account, provide institutional affiliation, and certify that products will be used exclusively for legitimate research purposes. We do not sell to individual consumers or the general public."
+      },
+      "q3": {
+        "question": "What documentation is provided with each product?",
+        "answer": "Every product shipment includes a batch-specific Certificate of Analysis (COA) detailing purity (determined by HPLC), identity confirmation (mass spectrometry), and other relevant analytical data. Safety Data Sheets (SDS/MSDS) compliant with Regulation (EC) No 1272/2008 (CLP) and the Globally Harmonized System (GHS) are also provided for each compound."
+      },
+      "q4": {
+        "question": "What purity levels are guaranteed?",
+        "answer": "All peptide products in our catalogue have a minimum purity specification of ≥98% as determined by reversed-phase High-Performance Liquid Chromatography (HPLC). Identity is confirmed by mass spectrometry (LC-MS or MALDI-TOF). Batch-specific purity data is documented in the Certificate of Analysis accompanying each shipment."
+      },
+      "q5": {
+        "question": "How are products stored and shipped?",
+        "answer": "Lyophilized peptide products are stored at -20°C in desiccated conditions and protected from light. Shipments are dispatched using appropriate cold-chain logistics to maintain compound integrity during transit. Specific storage conditions for each product are detailed on the product label and in the accompanying SDS documentation."
+      },
+      "q6": {
+        "question": "Does Helixon Labs provide guidance on product applications?",
+        "answer": "No. Helixon Labs provides chemical characterisation data, analytical documentation, and safety information for each product. We do not provide advice, guidance, or recommendations regarding biological activity, therapeutic applications, clinical use, or any other application beyond chemical identification and handling. Users are responsible for conducting their own literature review and risk assessment."
+      },
+      "q7": {
+        "question": "What regulations govern the sale and supply of these products?",
+        "answer": "Our operations are aligned with the REACH Regulation (EC) No 1907/2006, the CLP Regulation (EC) No 1272/2008, and the Globally Harmonized System (GHS) for chemical classification and labelling. In Spain, we comply with the LSSI-CE (Ley 34/2002), GDPR (Regulation EU 2016/679), and the LOPD-GDD (Organic Law 3/2018). All products are supplied with appropriate safety documentation as required by these regulatory frameworks."
+      },
+      "q8": {
+        "question": "Can I request a custom synthesis or bulk quantity?",
+        "answer": "Yes. Helixon Labs can accommodate requests for custom peptide synthesis and bulk quantities of existing catalogue compounds, subject to technical feasibility and regulatory compliance. Please contact our technical department at info@helixonlabs.com with your specifications, including desired sequence, purity requirements, and quantity. All custom orders are subject to the same research-use-only restrictions as catalogue products."
+      },
+      "q9": {
+        "question": "What happens if Helixon Labs suspects misuse of purchased products?",
+        "answer": "Helixon Labs reserves the right to refuse, cancel, or suspend any order where there is reasonable suspicion that the intended use is inconsistent with legitimate laboratory research. In such cases, payment will be refunded and the buyer's account may be terminated. Helixon Labs may also report suspected illegal activity to the relevant authorities, including AEMPS, law enforcement agencies, and other regulatory bodies as required by applicable law."
+      },
+      "q10": {
+        "question": "How does Helixon Labs ensure supply chain traceability?",
+        "answer": "Each product lot is assigned a unique batch number that enables full traceability from the point of manufacture through to delivery. Our supplier qualification programme includes periodic audits and quality reviews. Incoming materials undergo quality control checks before being released for distribution. All batch records, including analytical results and release approvals, are maintained in accordance with our document retention policy."
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Technical Enquiries & Orders",
+    "subtitle": "For product enquiries, quotation requests, bulk orders, or technical documentation, contact our team using the information below.",
+    "cards": {
+      "technical": {
+        "title": "Technical Department",
+        "description": "Product specifications, COA requests, custom synthesis enquiries",
+        "email": "info@helixonlabs.com"
+      },
+      "office": {
+        "title": "Registered Office",
+        "address1": "Helixon Labs, S.L.",
+        "address2": "[Registered Address]",
+        "address3": "Spain",
+        "cif": "CIF: B-XXXXXXXX"
+      },
+      "response": {
+        "title": "Response Times",
+        "description": "Technical enquiries are processed during business hours (CET). We aim to respond within 48 hours.",
+        "hours": "Mon–Fri, 09:00–17:00 CET"
+      }
+    },
+    "form": {
+      "title": "Request a Quotation",
+      "subtitle": "Complete the form below for product quotations, bulk pricing, or custom synthesis requests. All enquiries are subject to buyer qualification verification.",
+      "fullName": "Full Name *",
+      "fullNamePlaceholder": "Dr. / Prof. Name",
+      "email": "Institutional Email *",
+      "emailPlaceholder": "name@institution.edu",
+      "institution": "Institution / Company *",
+      "institutionPlaceholder": "University / Laboratory / Company",
+      "subject": "Enquiry Subject *",
+      "subjectPlaceholder": "Select type of enquiry",
+      "subjects": {
+        "quotation": "Product Quotation",
+        "bulk": "Bulk Order Enquiry",
+        "custom": "Custom Synthesis Request",
+        "coa": "COA / SDS Documentation Request",
+        "technical": "Technical Specification Query",
+        "account": "Account / Registration"
+      },
+      "message": "Message *",
+      "messagePlaceholder": "Please include product names, CAS numbers, quantities required, and any relevant specifications.",
+      "checkbox": "I certify that I represent a legitimate research institution, laboratory, or biotechnology company, and that any products requested will be used",
+      "checkboxHighlight": "exclusively for laboratory research purposes.",
+      "checkboxEnd": "I confirm that products will not be used for human consumption, veterinary use, or any therapeutic, diagnostic, or clinical application. I accept the",
+      "termsAndConditions": "Terms & Conditions",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy",
+      "submit": "Submit Enquiry"
+    },
+    "communicationPolicy": {
+      "title": "Communication Policy",
+      "text": "Helixon Labs provides technical support limited to product specifications, analytical documentation, and order processing. We do not provide guidance, recommendations, or information regarding biological activity, therapeutic applications, or clinical use of any product. Enquiries regarding human or veterinary applications will not receive a response."
+    }
+  },
+  "footer": {
+    "importantNotice": {
+      "title": "Important Notice",
+      "text": "All products supplied by Helixon Labs are intended strictly for laboratory research and experimental purposes. Not approved for human consumption, veterinary use, therapeutic applications, or diagnostic procedures."
+    },
+    "brand": {
+      "name": "Helixon Labs",
+      "description": "Technical supplier of synthetic peptides and chemical reagents for scientific research.",
+      "registered": "Registered in Spain",
+      "cif": "CIF: B-XXXXXXXX"
+    },
+    "navigation": {
+      "title": "Navigation",
+      "items": {
+        "home": "Home",
+        "about": "About Us",
+        "products": "Products",
+        "quality": "Quality",
+        "contact": "Contact"
+      }
+    },
+    "legal": {
+      "title": "Legal",
+      "items": {
+        "legalCompliance": "Legal & Compliance",
+        "avisoLegal": "Aviso Legal",
+        "privacy": "Privacy (GDPR)",
+        "cookies": "Cookie Policy",
+        "terms": "Terms & Conditions"
+      }
+    },
+    "compliance": {
+      "title": "Compliance",
+      "items": [
+        "REACH (EC) 1907/2006",
+        "CLP (EC) 1272/2008",
+        "LSSI-CE (Ley 34/2002)",
+        "GDPR / LOPD-GDD",
+        "GHS Labelling"
+      ]
+    },
+    "copyright": "© {year} Helixon Labs. All rights reserved.",
+    "disclaimer": "Products for laboratory research only. Not for human or veterinary use."
+  },
+  "cookies": {
+    "title": "Cookie Policy (Art. 22 LSSI-CE)",
+    "description": "This website uses strictly necessary cookies for session management. Analytical cookies require your explicit consent.",
+    "seePolicy": "See policy",
+    "reject": "Reject All",
+    "accept": "Accept All"
+  },
+  "languageSwitcher": {
+    "selectLanguage": "Select language",
+    "currentLanguage": "Current language"
+  }
+}
